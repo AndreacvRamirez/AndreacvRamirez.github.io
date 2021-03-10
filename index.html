@@ -1,96 +1,87 @@
 <!doctype html>
 <html lang="es">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
     <style>
-      p.centrado {
-        text-align: center;
+        p.centrado {
+          text-align: center;
+        }
+
+      *{
+          margin: 0;
+          padding: 0;
       }
 
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-    .centrado {
-        text-align: center;
+      .centrado {
+          text-align: center;
+        }
+      
+      h1{
+          color:red;
+          font-size: 2.5em;
+          text-align: center;
+          font-weight: 590;
       }
-    
-    h1{
-        color:red;
-        font-size: 2.5em;
-        text-align: center;
-        font-weight: 900;
-    }
 
-    h2{
-      font-size: 1.15em;
-      font-weight: 100;
-      padding: 15px;
-    }
+      h2{
+        font-size: 1.15em;
+        font-weight: 100;
+        padding: 15px;
+        font-weight: 300;
+      }
 
-    h3{
-      font-size: 1.15em;
-      font-weight: 100;
-      padding: 20px;
-    }
-
-    p{
-      font-size: 1.15em;
-      font-weight: 100;
-      padding: 12px;
-    }
-
-    ol{
-      font-size: 1.15em;
-      font-weight: 100;
-      padding-left: 250px;
-    }
-
-    .caja{
-      float:left;margin-left:20px;
-    }
-
-    .caja1{
-      padding-top: 15px;
-      float:left;margin-left:20px;
-    }
-
-    .caja2{
-      padding-top: 30px;
-      float:left;margin-left:290px;
-    }
+      h3{
+        font-size: 1.15em;
+        font-weight: 100;
+        padding: 20px;
+        font-weight: 300;
+      }
 
 
-    .audio-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left:20px;
-    }
+      p{
+        font-size: 1.15em;
+        font-weight: 100;
+        padding: 12px;
+      }
 
-      table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      padding-left: 50px;
-      width: 80%;
-    }
+      ol{
+        font-size: 1.15em;
+        font-weight: 100;
+        padding-left: 250px;
+      }
 
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
+      .caja{
+        float:left;margin-left:20px;
+      }
 
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-  </style>
+      .caja1{
+        padding-top: 15px;
+        float:left;margin-left:20px;
+      }
+
+      .caja2{
+        padding-top: 30px;
+        float:left;margin-left:290px;
+      }
+
+
+      .audio-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left:20px;
+      }
+
+      .table {
+        width: 80%;
+      }
+    </style>
 
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     
-
   <title>Hoja de Vida</title>
   
   </head>
@@ -134,7 +125,7 @@
   </div>
 
   <div class ="caja">  
-    <h3>Películas Favoritas:</h3>
+    <h3 >Películas Favoritas:</h3>
     <ol start="1">
       <li>X-Men</li>
       <li>Star Wars</li>
@@ -157,36 +148,41 @@
 
 
     <div class="caja2">
-      <table>
-        <tr>
+      <table class="table table-striped">
+        <tr class="table-secondary">
           <th class="centrado">Materia</th>
           <th>Nota</th>
           <th class="centrado">Porque es favorita</th>
         </tr>
-        <tr>
+
+        <tr class="table-primary">
           <td class="centrado">Calculo Diferencial</td>
           <td>4.2</td>
           <td>Principalmente porque lon temas que componen la materia los vi en mi último
               año en secundaria.</td>
         </tr>
-        <tr>
+
+        <tr class="table-light">
           <td class="centrado">Fundamentos de Programacion</td>
           <td>3.5</td>
           <td>Se debe a que fue mi primer contacto real con la programación.</td>
         </tr>
-        <tr>
+
+        <tr class="table-primary">
           <td class="centrado">Algebra Lineal</td>
           <td>3.9</td>
           <td>Debido a que conocí y comprendí terminos como vectores, matrices, 
               sistemas de ecuaciones lineales, entre otros.</td>
         </tr>
-        <tr>
+        
+        <tr class="table-light">
           <td class="centrado"> Investigacion de Operaciones</td>
           <td>4.2</td>
           <td>Es una de mis favoritas debido a que permite la aplicación
              de métodos analíticos avanzados para ayudar a tomar mejores decisiones.​</td>
         </tr>
-        <tr>
+        
+        <tr class="table-primary">
           <td class="centrado">Sistemas Operativos</td>
           <td>3.4</td>
           <td>Porque me permitió entender los problemas que atienden los sistemas operativos, 
